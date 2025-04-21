@@ -4,3 +4,5 @@ config.h
 *.orig
 *.rej
 .ccls-cache/
+setup*
+up.sh

@@ -22,6 +22,7 @@ This is meant to be installed alongside my [dotfiles](https://github.com/borsche
 
 # Patches
 
+- systray
 - barpadding 
 - bottomstack
 - cfacts
