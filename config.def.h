@@ -143,7 +143,7 @@ static const Key keys[] = {
 	{0,				XF86XK_MonBrightnessDown,   spawn,	SHCMD("sudo xbacklight -dec 5")},
 
     {0,				XK_Print,                   spawn,	SHCMD("maimpick")},
-    {MODKEY,		XK_r,                       spawn,	SHCMD("ranger")},
+    {MODKEY,		XK_r,                       spawn,	SHCMD("$TERMINAL ranger")},
 
     { MODKEY,                           XK_w,       spawn,          SHCMD("$BROWSER") },
     { MODKEY,                           XK_d,       spawn,          SHCMD("rofi -show drun") },
