@@ -139,7 +139,7 @@ static const Key keys[] = {
     {0,             XF86XK_AudioLowerVolume,    spawn, {.v = downvol}},
 	{0,             XF86XK_AudioMute, spawn,    {.v = mutevol }},
 	{0,             XF86XK_AudioRaiseVolume,    spawn, {.v = upvol}},
-	{0,				XF86XK_MonBrightnessUp,     spawn,	SHCMD("sudo xbacklight -inc 5"),
+	{0,				XF86XK_MonBrightnessUp,     spawn,	SHCMD("sudo xbacklight -inc 5")},
 	{0,				XF86XK_MonBrightnessDown,   spawn,	SHCMD("sudo xbacklight -dec 5")},
 
     {0,				XK_p,               	spawn,	SHCMD("maimpick")},
