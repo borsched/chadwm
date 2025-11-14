@@ -54,6 +54,7 @@ static const char *colors[][3]      = {
     [SchemeTag3]       = { blue,  black,  black },
     [SchemeTag4]       = { green,   black,  black },
     [SchemeTag5]       = { pink,    black,  black },
+    [SchemeTag6]       = { teal,    black,  black },
     [SchemeLayout]     = { blue,   black,  black },
     [SchemeBtnPrev]    = { green,   black,  black },
     [SchemeBtnNext]    = { yellow,  black,  black },
@@ -61,7 +62,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = {"󰖟", "", "", "󰭹", ""};
+static char *tags[] = {"󰖟", "", "", "󰭹", "", ""};
 
 static const char* eww[] = { "eww", "-c", "/home/siduck/.config/chadwm/eww", "open" , "eww", NULL };
 
@@ -71,7 +72,7 @@ static const Launcher launchers[] = {
 };
 
 static const int tagschemes[] = {
-    SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5
+    SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5, SchemeTag6
 };
 
 static const unsigned int ulinepad      = 5; /* horizontal padding between the underline and tag */
