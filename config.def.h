@@ -36,7 +36,7 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Hack Nerd Font Mono:style:pixelsize=22" };
+static const char *fonts[]          = {"Hack Nerd Font Mono:style:pixelsize=32" };
 
 // theme
 #include "themes/onedark.h"
@@ -140,11 +140,12 @@ static const Key keys[] = {
     {0,             XF86XK_AudioLowerVolume,    spawn, {.v = downvol}},
 	{0,             XF86XK_AudioMute, spawn,    {.v = mutevol }},
 	{0,             XF86XK_AudioRaiseVolume,    spawn, {.v = upvol}},
-	{0,				XF86XK_MonBrightnessUp,     spawn,	SHCMD("sudo xbacklight -inc 5")},
-	{0,				XF86XK_MonBrightnessDown,   spawn,	SHCMD("sudo xbacklight -dec 5")},
+	{0,				XK_F7,      spawn,	SHCMD("brightnessctl set 5%-")},
+	{0,				XK_F8,	    spawn,	SHCMD("brightnessctl set +5%")},
+	{0,				XK_F12,	    spawn,	SHCMD("$TERMINAL -e pulsemixer")},
 
     {0,				XK_Print,                   spawn,	SHCMD("maimpick")},
-    {MODKEY,		XK_r,                       spawn,	SHCMD("$TERMINAL ranger")},
+    {MODKEY,		XK_r,                       spawn,	SHCMD("$TERMINAL -e lf")},
 
     { MODKEY,                           XK_w,       spawn,          SHCMD("$BROWSER") },
     { MODKEY,                           XK_d,       spawn,          SHCMD("rofi -show drun") },
